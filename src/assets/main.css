@@ -1,0 +1,9 @@
+@import './fonts.css';
+
+* {
+    font-family: "Ubuntu";
+}
+
+header {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
