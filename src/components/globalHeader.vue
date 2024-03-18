@@ -1,11 +1,12 @@
 <template>
     <header>
-        <h3>Esteban Dervaux Portfolio</h3>
-        <ol>
-            <li><a href="">A</a></li>
-            <li><a href="">B</a></li>
-            <li><a href="">C</a></li>
-            <li><a href="">D</a></li>
+        <h1>Esteban Dervaux Portfolio</h1>
+        <br />
+        <ol id="header-nav">
+            <li><a href="">🏠 Home</a></li>
+            <li><a href="">🪲 Skills</a></li>
+            <li><a href="">🧪 Projects</a></li>
+            <li><a href="">✉️ Contact me</a></li>
         </ol>
     </header>
 </template>

@@ -1,33 +1,21 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import aboutMe from './components/aboutMe.vue';
+import aboutMe from "./components/aboutMe.vue";
 import Header from "./components/globalHeader.vue"
+import Footer from "./components/globalFooter.vue"
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
     <Header></Header>
     <aboutMe></aboutMe>
-    
+    <Footer></Footer>
+
   </main>
 </template>
 
 <style scoped>
 header {
   line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -47,4 +35,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>./components/globalHeader.vue
+</style>

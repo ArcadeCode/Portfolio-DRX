@@ -3,5 +3,5 @@
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    src: local(''),url('fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('ttf')
-    }
+    src: local(''),url('fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
