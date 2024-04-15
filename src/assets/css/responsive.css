@@ -1,0 +1,26 @@
+/*
+This file convert main.css to be responsive with the screen use. 
+*/
+
+/* COMPUTER */
+@media (min-width:1000px) {
+    #headerNavSeparator {
+        display: block;
+    }
+    #header-nav li {
+        display: inline;
+    }
+}
+
+/* TABLET */
+@media (max-width: 600px) {
+    #header-nav li {
+    display: table-column;
+    }
+}
+/* SMARTPHONE*/
+@media (max-width: 460px) {
+    #headerNavSeparator {
+        display: none;
+    }
+}

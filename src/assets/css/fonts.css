@@ -1,0 +1,13 @@
+/* In this file I have all my font loaded for the project */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),url("../fonts/Roboto/Roboto-Regular.ttf") format(truetype);
+}
