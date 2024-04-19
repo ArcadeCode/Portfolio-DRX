@@ -22,13 +22,17 @@ const popupTrigger_contactMe = ref({
             <project name="Mon projet A" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
             <project name="Mon projet B" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
             <project name="Mon projet C" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
+            <project name="Mon projet D qui déborde" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim Lorem ipsum consectetur dolore anim duis velit laboris nisi ullamco eiusmod adipisicing quis adipisicing enim et reprehenderit deserunt qui tempor labore sed eiusmod ullamco duis do aliqua irure laborum pariatur dolore culpa amet pariatur incididunt eu veniam esse in nostrud " link="https://google.com"/>
+            <project name="Mon projet E qui déborde encore plus" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim Lorem ipsum consectetur dolore anim duis velit laboris nisi ullamco eiusmod adipisicing quis adipisicing enim et reprehenderit deserunt qui tempor labore sed eiusmod ullamco duis do aliqua irure laborum pariatur dolore culpa amet pariatur incididunt eu veniam esse in nostrud " link="https://google.com"/>
         </section>
         <Footer></Footer>
     </main>
 </template>
 
-<style>
+<style scoped>
 #projectsFlexbox {
+    border: var(--debug-color-3) 3px solid;
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

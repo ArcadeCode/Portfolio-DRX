@@ -12,6 +12,11 @@
 
     --block-border-radius: 8px;
     --block-border-color: hsl(203, 30%, 20%);
+
+    --debug-color-0 : hsl(55, 100%, 60%);
+    --debug-color-1 : hsl(105, 100%, 60%);
+    --debug-color-3 : hsl(305, 100%, 60%);
+    --debug-color-4 : hsl(405, 100%, 60%);
 }
 
 a, p, div {

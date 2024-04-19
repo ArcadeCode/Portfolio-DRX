@@ -23,7 +23,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
 #contactMe {
     position: absolute;
     top: 50%;

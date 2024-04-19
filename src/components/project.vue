@@ -26,15 +26,30 @@ export default defineComponent({
         </article>
 </template>
 
-<style>
+<style scoped>
+h3 {
+    width: 80%;
+}
+
+/* DEBUG */
+* {
+    border: solid 1px var(--debug-color-0)
+}
+h3 {
+    border: solid 1px var(--debug-color-1);
+}
+/* END DEBUG */
+
+
 .projectCard {
     border: var(--block-border-color) solid 3px;
     border-radius: 20px;
     background-color: var(--color-background-soft);
     margin: 10px 10px 10px 10px;
     padding: 10px 15px 10px 15px;
-    width: 20%;
+    width: 300px;
     height: 320px;
+    overflow: hidden;
 }
 .projectCardExpended {
     border: var(--block-border-color) solid 3px;
@@ -42,11 +57,12 @@ export default defineComponent({
     background-color: var(--color-background-soft);
     margin: 10px 10px 10px 10px;
     padding: 10px 15px 10px 15px;
-    width: 40%;
+    width: 500px;
     height: 300px;
+    overflow: scroll;
 }
 
-.projectCard a, .projectCardExpended a {
+.projectCard a {
     background-color: var(--color-background-soft2);
     transition: background-color 0.3s ease;
     border: var(--block-border-color) solid 1px;
@@ -54,11 +70,11 @@ export default defineComponent({
     padding: 3px 3px 3px 3px;
     text-decoration: none;
 }
-.projectCard a:hover, .projectCardExpended a:hover {
+.projectCard a:hover {
     background-color: var(--color-background-dark);
 }
 
-.projectCard #expandIcon, .projectCardExpended #expandIcon {
+.projectCard #expandIcon {
     cursor: pointer;
     filter: invert(100%); /*Set white the icon*/
     position: relative;
@@ -68,8 +84,6 @@ export default defineComponent({
     border: var(--block-border-color) solid 1px;
     border-radius: 30px;
     transition: border-radius 0.2s ease-in-out;
-} .projectCard #expandIcon:hover, .projectCardExpended #expandIcon:hover {
-    border-radius: 10px;
 }
-
+.projectCard #expandIcon:hover { border-radius: 10px; }
 </style>

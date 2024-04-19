@@ -11,7 +11,7 @@
     </header>
 </template>
 
-<style>
+<style scoped>
 header {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     text-align: center;

@@ -13,15 +13,15 @@
             
             <div id="github_stats">
                 <a href="https://github.com/ArcadeCode" target="_blank">
-                <img height="180px" src="https://github-readme-stats.vercel.app/api?username=ArcadeCode&show_icons=true&theme=material-palenight&count_private=true&hide_border=true" />                
-                <img height="180px" src="https://github-readme-stats.vercel.app/api/top-langs?username=ArcadeCode&show_icons=true&theme=material-palenight&hide_border=true&layout=compact" />
+                <img height="180px" src="https://github-readme-stats-drx.vercel.app/api?username=ArcadeCode&show_icons=true&theme=material-palenight&count_private=true&hide_border=true" />                
+                <img height="180px" src="https://github-readme-stats-drx.vercel.app/api/top-langs?username=ArcadeCode&show_icons=true&theme=material-palenight&hide_border=true&layout=compact&lang_count=9" />
             </a>
             </div>
         </article>
     </section>
 </template>
 
-<style>
+<style scoped>
 #aboutMe #github_stats {
 padding: 5px 5px 5px 5px;
 display:flex;
