@@ -6,7 +6,7 @@
             <li><a href="#">🏠 Home</a></li>
             <li><a href="#">🪲 Skills</a></li>
             <li><a href="#">🧪 Projects</a></li>
-            <li><a href="#" v-on:click="openPopupContactMe">✉️ Contact me</a></li>
+            <li><a href="#">✉️ Contact me</a></li>
         </ol>
     </header>
 </template>
