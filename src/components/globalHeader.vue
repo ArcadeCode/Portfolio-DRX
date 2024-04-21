@@ -3,10 +3,10 @@
         <h1>Esteban Dervaux Portfolio</h1>
         <h1 id="headerNavSeparator">|</h1>
         <ol id="header-nav">
-            <li><a href="">🏠 Home</a></li>
-            <li><a href="">🪲 Skills</a></li>
-            <li><a href="">🧪 Projects</a></li>
-            <li><a href="">✉️ Contact me</a></li>
+            <li><a href="#">🏠 Home</a></li>
+            <li><a href="#">🪲 Skills</a></li>
+            <li><a href="#">🧪 Projects</a></li>
+            <li><a href="#" v-on:click="openPopupContactMe">✉️ Contact me</a></li>
         </ol>
     </header>
 </template>
@@ -16,6 +16,7 @@ header {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     background-color: var(--color-background-soft);
     border: #181818 solid 4px;
     border-radius: var(--block-border-radius);

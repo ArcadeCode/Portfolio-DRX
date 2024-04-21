@@ -5,4 +5,5 @@ import "./assets/css/main.css"
 import "./assets/css/responsive.css" // Applied after main.css to fix things with other screen size
 import { createApp } from 'vue'
 import App from './App.vue'
+
 createApp(App).mount('#app') // This function mount the vue.js app

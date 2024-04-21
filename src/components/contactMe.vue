@@ -1,9 +1,3 @@
-<script lang="ts">
-export default {
-    //
-}
-</script>
-
 <template>
     <div id="contactMe">
         <span>
@@ -26,6 +20,7 @@ export default {
 <style scoped>
 #contactMe {
     position: absolute;
+    z-index: 20;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

@@ -7,25 +7,29 @@
     --color-background-soft2: hsl(203, 65%, 30%);
     --color-background-dark: hsl(203, 40%, 30%);
   
-    --color-heading: snow;
     --color-text: hsl(0, 0%, 90%);
 
     --block-border-radius: 8px;
     --block-border-color: hsl(203, 30%, 20%);
 
+    /* For debugging flexbox items */
     --debug-color-0 : hsl(55, 100%, 60%);
     --debug-color-1 : hsl(105, 100%, 60%);
     --debug-color-3 : hsl(305, 100%, 60%);
     --debug-color-4 : hsl(405, 100%, 60%);
 }
 
-a, p, div {
-    font-family:"Ubuntu";
-    font-size: 20px;
-    color: var(--color-text);
+* {
+    z-index: 5;
 }
 
 body {
     background-color: var(--color-background-soft);
-    height: 2000px;
+    margin: 0;
+}
+
+a, p, div {
+    font-family:"Ubuntu";
+    font-size: 20px;
+    color: var(--color-text);
 }
