@@ -4,7 +4,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'; // Because of use of Vue 2.0 will be forced to imported it
 export default defineComponent({
-    props: ['name', 'description', 'link'], // Generic propriety for this template
+    props: ["name", "description", "link"], // Generic propriety for this template
     data() {
         return {isExpanded: false}; // Variable to follow expand state
     },

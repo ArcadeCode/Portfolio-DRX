@@ -1,11 +1,12 @@
 <script setup lang="ts">
 // Globals templates
 import Header from "./components/globalHeader.vue";
-import Footer from "./components/globalFooter.vue";
+import Footer from "./components/globalFooter.vue"; // FIXME: FIX the issue about the footer wrapping
 // Specifics templates
 import aboutMe from "./components/aboutMe.vue";
+import project from "./components/project.vue";
 import contactMe from "./components/contactMe.vue";
-import project from "./components/project.vue"
+import cat from "./components/myCat.vue";
 </script>
 
 <template>
@@ -15,13 +16,13 @@ import project from "./components/project.vue"
         <!-- TODO: Faire fonctionner cette popup EN V.3.x-->
         <aboutMe></aboutMe>
         <section id="projectsFlexbox">
-            <project name="Mon projet A" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
-            <project name="Mon projet B" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
-            <project name="Mon projet C" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim " link="https://google.com"/>
-            <project name="Mon projet D qui déborde" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim Lorem ipsum consectetur dolore anim duis velit laboris nisi ullamco eiusmod adipisicing quis adipisicing enim et reprehenderit deserunt qui tempor labore sed eiusmod ullamco duis do aliqua irure laborum pariatur dolore culpa amet pariatur incididunt eu veniam esse in nostrud " link="https://google.com"/>
-            <project name="Mon projet E qui déborde encore plus" description="Lorem ipsum veniam proident sed ut sint sunt enim dolore nostrud magna dolore incididunt qui sunt ex ut sit in excepteur amet nulla magna velit et et eiusmod id anim Lorem ipsum consectetur dolore anim duis velit laboris nisi ullamco eiusmod adipisicing quis adipisicing enim et reprehenderit deserunt qui tempor labore sed eiusmod ullamco duis do aliqua irure laborum pariatur dolore culpa amet pariatur incididunt eu veniam esse in nostrud " link="https://google.com"/>
+            <project name="Kapla" description="Un environnement de développement tout en un fait pour du dev python, C et C++" link="https://github.com/ArcadeCode/Kapla"/>
+            <project name="Arcade Music Interface" description="Une interface personnalisé pour l'utilisation de spotify avec mes propres idées et concepts ajouté." link="https://github.com/ArcadeCode/Arcade-Music-Interface"/>
+            <project name="NSI-project" description="Un project fait en nsi dans le cadre de démontrer nos compétences en python, ce projet est un jeu inspiré énormément du Textorisct. Ce projet est basé sur PyGame avec un text listener complètement coder de 0 utilisant simplement le module basique keyboard." link="https://github.com/ArcadeCode/nsi-project-2024"/>
         </section>
-        <Footer></Footer>
+        <cat></cat>
+        <contactMe></contactMe>
+        <!-- <Footer></Footer> -->
     </main>
 </template>
 

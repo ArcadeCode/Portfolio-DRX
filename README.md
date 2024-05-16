@@ -1,5 +1,5 @@
 # My portfolio
-This is my website to present my experience in development, wrote using vue.js and typescript.
+This is a website to understand basics of Vue.js and Typescript, this website is a portfolio for my projects and will grow up and evolved with the time.
 
-> [!WARNING]\
-> Actually this project is under development and not already deploy
+> [!INFO]\
+> Deploy v0.1 : Adding basics thing and a fun template about my cats

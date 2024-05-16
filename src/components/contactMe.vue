@@ -13,17 +13,27 @@
         <span>
             <img style="float: right;border-radius: 5px;" width="100%" height="auto" src="https://media1.tenor.com/m/DimzPZMypFcAAAAd/laptop.gif" alt="GIF of a cat who read her mails">
         </span>
-        <button>Close the popup ?</button>
+        <!-- <button>Close the popup ?</button> -->
+        <form action="" method="post">
+            <input type="text" name="contactMe" id="name" placeholder="Nom - Prénom"> <br />
+            <input type="mail" name="contactMe" id="email" placeholder="email"> <br />
+            <textarea name="contactMe" id="about">Pourquoi voulez vous me contacter ?</textarea> <br />
+            <input type="submit" value="Envoyer le message">
+        </form>
     </div>
 </template>
 
 <style scoped>
+form {
+    text-align: center;
+}
+
 #contactMe {
-    position: absolute;
+    /* position: absolute;
     z-index: 20;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     
     border: var(--block-border-color) 4px solid;
     border-radius: var(--block-border-radius);
