@@ -1,23 +1,11 @@
-// Setup for vue.js
-import "./assets/css/main.css"
-// After this import the main root variables will be include in all templates
-// main.css include other import like keyframes and fonts to load
-import "./assets/css/responsive.css" // Applied after main.css to fix things with other screen size
+import "./assets/main.css";
 
-import { createApp } from "vue"
-import { createWebHistory, createRouter } from 'vue-router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
 
-import home from './App.vue'
-import contact from './components/contactMe.vue'
+const app = createApp(App);
 
-const routes = [
-  { path: '/', component: home },
-  { path: '/contact', component: contact },
-]
+app.use(router);
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
-
-createApp(home).use(router).mount('#app')
+app.mount("#app");
