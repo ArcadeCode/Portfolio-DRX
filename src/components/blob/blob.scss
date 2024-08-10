@@ -1,0 +1,45 @@
+$color-gradient-1: #09cbb3;
+$color-gradient-2: #27677b;
+
+#blobCanvas .blob {
+    z-index: 1;
+
+    $blob-color1: $color-gradient-1;
+    $blob-color2: $color-gradient-2;
+    $blob-gradient: linear-gradient(45deg, $blob-color2 0%, $blob-color1 100%);
+
+    position: absolute; /* Positionne l'élément de manière absolue */
+    top: 0; /* Positionne à 0 pixels du haut de la page */
+    left: 0;
+
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    width: var(--blob-size);
+    height: var(--blob-size);
+    background: $blob-color1;
+    background-image: $blob-gradient;
+
+    $_blob-shadow-xOffset: 0px;
+    $_blob-shadow-yOffset: 0px;
+    $_blob-shadow-blur: 5px;
+    $_blob-shadow-spread: 1px;
+    opacity: 95%;
+
+    -webkit-box-shadow: $_blob-shadow-xOffset $_blob-shadow-yOffset
+        $_blob-shadow-blur $_blob-shadow-spread $blob-color1;
+    -moz-box-shadow: $_blob-shadow-xOffset $_blob-shadow-yOffset
+        $_blob-shadow-blur $_blob-shadow-spread $blob-color1;
+    box-shadow: $_blob-shadow-xOffset $_blob-shadow-yOffset $_blob-shadow-blur
+        $_blob-shadow-spread $blob-color1;
+
+    animation: animateBlob 2s linear infinite alternate;
+    transition: transform 0.2s cubic-bezier(0.46, 1.08, 0.9, 1);
+}
+
+@keyframes animateBlob {
+    0% {
+        border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    }
+    100% {
+        border-radius: 40% 60%;
+    }
+}
