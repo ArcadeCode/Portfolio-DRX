@@ -13,7 +13,6 @@ img {
     max-width: 100%;
     min-width: 100%;
     height: auto;
-
     /* Beautify rules */
     border-radius: 50%; // Circle radius
     object-fit: cover;

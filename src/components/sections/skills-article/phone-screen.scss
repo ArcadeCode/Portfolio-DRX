@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px) {
+    /* Re size skills-article for phone screen */
+    ol {
+        padding: 10px 0;
+        width: 100%;
+
+        border-radius: 8px;
+        background-color: var(--color-background-soft);
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        & > p {
+            width: 100%;
+            align-items: center;
+        }
+        & > div {
+            width: fit-content;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    li:nth-last-child(1) p {
+        text-align: center;
+        margin-right: 0;
+        width: 100%;
+    }
+}

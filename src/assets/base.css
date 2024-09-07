@@ -1,6 +1,6 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-    --vt-c-white: #ffffff;
+    /* color palette from <https://github.com/vuejs/theme> */
+    /* --vt-c-white: #ffffff;
     --vt-c-white-soft: #f8f8f8;
     --vt-c-white-mute: #f2f2f2;
 
@@ -18,42 +18,62 @@
     --vt-c-text-light-1: var(--vt-c-indigo);
     --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
     --vt-c-text-dark-1: var(--vt-c-white);
-    --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+    --vt-c-text-dark-2: rgba(235, 235, 235, 0.64); */
+
+    /* Warm up version I choose on this project */
+    --vt-c-white-warm: #fff0dc; /* Exemple: blanc chaud avec une teinte légèrement beige */
+    --vt-c-white-soft-warm: #f8ebdc; /* Blanc doux avec une teinte chaude */
+    --vt-c-white-mute-warm: #f2e6dc; /* Blanc muted avec une teinte chaude */
+
+    --vt-c-black-warm: #181818; /* Noir réchauffé (non modifié, car très sombre) */
+    --vt-c-black-soft-warm: #222222; /* Noir soft réchauffé (non modifié, car très sombre) */
+    --vt-c-black-mute-warm: #282828; /* Noir mute réchauffé (non modifié, car très sombre) */
+
+    --vt-c-divider-light-1-warm: #3c28284a; /* Divider light réchauffé */
+    --vt-c-divider-light-2-warm: #3c28281f; /* Divider light réchauffé */
+    --vt-c-divider-dark-1-warm: #543c3ca6; /* Divider dark réchauffé */
+    --vt-c-divider-dark-2-warm: #543c3c7a; /* Divider dark réchauffé */
+
+    --vt-c-text-light-1-warm: #2c3c32; /* Texte light réchauffé */
+    --vt-c-text-light-2-warm: #3c2828a8; /* Texte light réchauffé */
+    --vt-c-text-dark-1-warm: #fff5eb; /* Texte dark réchauffé */
+    --vt-c-text-dark-2-warm: #ebe1d7a3; /* Texte dark muted réchauffé */
 }
 
 /* semantic color variables for this project */
 :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
+    /* Mode clair avec versions chaudes */
+    --color-background: var(--vt-c-white-warm);
+    --color-background-soft: var(--vt-c-white-soft-warm);
+    --color-background-mute: var(--vt-c-white-mute-warm);
 
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
+    --color-border: var(--vt-c-divider-light-2-warm);
+    --color-border-hover: var(--vt-c-divider-light-1-warm);
 
-    --color-heading: var(--vt-c-text-light-1);
-    --color-text: var(--vt-c-text-light-1);
+    --color-heading: var(--vt-c-text-light-1-warm);
+    --color-text: var(--vt-c-text-light-1-warm);
 
     --section-gap: 160px;
 }
 
+/* Ajustements pour le mode sombre avec versions chaudes */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-background: var(--vt-c-black);
-        --color-background-soft: var(--vt-c-black-soft);
-        --color-background-mute: var(--vt-c-black-mute);
+        --color-background: var(--vt-c-black-warm);
+        --color-background-soft: var(--vt-c-black-soft-warm);
+        --color-background-mute: var(--vt-c-black-mute-warm);
 
-        --color-border: var(--vt-c-divider-dark-2);
-        --color-border-hover: var(--vt-c-divider-dark-1);
+        --color-border: var(--vt-c-divider-dark-2-warm);
+        --color-border-hover: var(--vt-c-divider-dark-1-warm);
 
-        --color-heading: var(--vt-c-text-dark-1);
-        --color-text: var(--vt-c-text-dark-2);
+        --color-heading: var(--vt-c-text-dark-1-warm);
+        --color-text: var(--vt-c-text-dark-2-warm);
     }
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
     margin: 0;
     font-weight: normal;
 }

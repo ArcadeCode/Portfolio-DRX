@@ -1,9 +1,15 @@
 @import "./base.css";
 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:regular,italic,700,700italic);
+
+* {
+    z-index: 10; /* Prevent mouse blob to get on top of readable elements */
+    cursor: none;
+}
+
 #app {
-    max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     font-weight: normal;
 }
 
@@ -21,15 +27,7 @@ a,
     }
 }
 
-@media (min-width: 1024px) {
-    body {
-        display: flex;
-        place-items: center;
-    }
-
-    #app {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 0 2rem;
-    }
+.icon {
+    height: auto;
+    width: 2%;
 }

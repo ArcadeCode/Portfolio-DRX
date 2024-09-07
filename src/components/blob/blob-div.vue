@@ -23,3 +23,9 @@ onMounted(() => {
 </template>
 
 <style scoped src="./blob.scss"></style>
+<style lang="scss">
+#blobCanvas {
+    width: 0;
+    height: 0;
+}
+</style>

@@ -23,6 +23,6 @@ export function moveBlob(event: MouseEvent, blob: HTMLElement | null): void {
 export function setBlobSize(): void {
     document.documentElement.style.setProperty(
         "--blob-size",
-        getRandomBetween(50, 75) + "px"
+        getRandomBetween(10, 30) + "px"
     );
 }
